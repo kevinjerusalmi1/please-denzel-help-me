@@ -1,12 +1,22 @@
 // Q1. Create a variable called `denzel` - that can't be redeclared - and assign it the string 'please denzel, help me'
 
+const denzel = 'please denzel, help me';
+
 // Q2. Use the variable `actor` to create a new variable called `inspirational` that is assigned the string "Is Denzel Washington an inspirational actor?"
 const actor = 'Denzel Washington';
+let inspirational = "Is " + actor + "an inspirational actor?";
 
 // Q3  Create an object called `family` and give it the following properties:
 // family has been `married` on "1983" (Number)
 // family is not `presidentOfTheUnitedStates` (boolean)
 // family has `children` called "John David", "Katia", "Olivia" and "Malcolm" (array of strings)
+
+var family = {
+  married: 1983,
+  presidentOfTheUnitedStates: False,
+  children: ["John David", "Katia", "Olivia","Malcolm"]
+};
+
 
 // Q4. Change
 // * the `name` stage to "A Raisin in the Sun"
@@ -17,10 +27,17 @@ const stage = {
   'year': '2010'
 };
 
+stage.name = "A Raisin in the Sun";
+stage.year = "2014";
+
+
 // Q5. Change the `movie` "glory" to "Training Day" using square bracket notation
 const awards = {
   'movie': 'glory'
 };
+awards['movie] = "Training Day";
+
+
 
 // Q6. Create an object called "earlywork"
 // The key should be the movie name and the value the release year
@@ -31,18 +48,33 @@ const awards = {
 // * Cry Freedom (1987)
 // * For Queen and Countryy (1988)
 
+const earlywork = {
+       'name'= ''
+       };
+ 
+
 // Q7. Return a new array from `debaters` with all item in uppercase
 const debaters = ['we do', 'what we have to do', 'in order to do', 'what we want to do'];
+
+for(var i=0; i<debaters.length;i++){
+  debaters[i] =debaters[i].toUpperCase();
+}
 
 // Q8. Using this array.
 // Do the following 5 steps
 const directors = ['spikelee', 'ridleyscott', 'zemeckis'];
 
 // 1. add "tonyscott" value to the end of `directors` array
+directors.push("tonyscott");
 
 // 2. remove "spikelee" value and store it in a variable called firstDirector
 
+const firstDirector = directors.shift();
+
 // 3. add "himself" value to the start of `directors` array
+directors.push("tonyscott");
+
+
 
 // 4. remove "ridleyscott" value from the array and store it in a variable called secondDirector
 
@@ -53,6 +85,14 @@ const directors = ['spikelee', 'ridleyscott', 'zemeckis'];
 console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']));
 // ❯ ['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child', 'Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']
 
+function duplicate(liste){
+  const liste2=liste
+for (let i = 0; i < liste.length; i++) {
+    list2.push(liste[i]);
+  }
+  return liste2
+
+};
 
 // Q10. Refactor the current ES5-style function `police` in ES6-style.
 const police = function (names) {
@@ -109,10 +149,16 @@ fetch('http://api.tvmaze.com/search/people?q=denzel+washington')
 
 // Q16. Give me at least 3 memorable websites that engage to continue (because of nice UX/UI AND avoid to give me facebook, airbnb etc...)
 
+"Amazon.com that shows of much an idea can change the world,  Canvas.com can change the world with better presentation, pinterest can give yu every information you need"
+
 // Q17. Describe an ESILV project that you worked on that you’re proud of?
+"the machine learning project because i did a big study and i learnt a lot of stuff on machine learning and otbained the mark of 15/20"
+
 
 // Q18. Describe an ESILV project that you worked on that you’re not so proud of?
+"The project of Web architecture because i obtained a 5/20 :'("
 
 // Q19. What are some things you like about the developer tools you use?
 
 // Q20. Last question: could you explain me - in your terms - why the title of the course is "Web Application Architecture(s)" and not "Web Application Architecture"?
+"because there ise more than 1 way to create the same web architechtures, there are several ways to do the same thing !"
